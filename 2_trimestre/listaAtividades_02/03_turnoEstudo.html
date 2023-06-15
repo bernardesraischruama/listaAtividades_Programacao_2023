@@ -1,3 +1,4 @@
+<meta charset="UTF-8">
 <script>
     /*
     //PROBLEMA
@@ -12,9 +13,22 @@
     */
 
     //ENTRADA
+    const turno = prompt("Informe em que turno você estuda: (Responda com M, V, N)");
 
-    
+
     //PROCESSAMENTO
+    if (turno == "M") {
+        alert(`Bom dia!`);
+    }
+    else if (turno == "V") {
+        alert(`Boa tarde!`);
+    }
+    else if (turno == "N") {
+        alert(`Boa noite!`);
+    }
+    else {
+        alert(`Resposta inválida com: M, V, ou N`);
+    }
 
     
     //SAÍDA

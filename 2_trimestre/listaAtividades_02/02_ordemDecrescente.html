@@ -1,3 +1,4 @@
+<meta charset="UTF-8">
 <script>
     /*
     //PROBLEMA
@@ -5,10 +6,31 @@
     */
 
     //ENTRADA
+    let num1 = prompt ('insira um número:');
+    let num2 = prompt ('Insira um segundo número:');
+    let num3 = prompt ('Insira um terceiro número:');
 
-    
     //PROCESSAMENTO
-    
+    if(num1 > num2 && num2 > num3) {
+        alert(`Os números em ordem decrecente ficaram: ${num3}, ${num2}, ${num1}`);
+    }
+    else if (num3 > num2 && num2 > num1) {
+        alert(`Os números em ordem decrecente ficaram: ${num1}, ${num2}, ${num3}`);
+    }
+    else if (num2 > num1 && num1 > num3) {
+        alert(`Os números em ordem decrecente ficaram: ${num3}, ${num1}, ${num2}`);
+    }
+    else if (num3 > num1 && num1 > num2) {
+        alert(`Os números em ordem decrecente ficaram: ${num2}, ${num1}, ${num3}`);
+    }
+    else if (num1 > num3 && num3 > num2) {
+        alert(`Os números em ordem decrecente ficaram: ${num2}, ${num3}, ${num1}`);
+    }
+    else if (num2 > num3 && num3 > num1) {
+        alert(`Os números em ordem decrecente ficaram: ${num1}, ${num3}, ${num2}`);
+    }
+
+
     //SAÍDA
     
 </script>
